@@ -4,7 +4,7 @@ import { FaUserCircle } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
 const DashboardPage = ({ user, isLoggedIn }) => {
-  const navigate = useNavigate();  // React Router's useNavigate hook
+  const navigate = useNavigate();  // Reacts Router's useNavigate hook
 
   const [jobListings, setJobListings] = useState([
     { title: "Software Engineer", company: "ABC Corp", location: "Remote", profession: "Engineering", salary: "100000", status: "Open" },

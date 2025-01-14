@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { FaUserCircle } from 'react-icons/fa';
 
+//EmployerDashboard
 const EmployerDashboard = () => {
   const [jobListings, setJobListings] = useState([
     { title: "Software Engineer", company: "ABC Corp", location: "Remote", profession: "Engineering", salary: "100000", status: "Open" },
@@ -40,7 +41,7 @@ const EmployerDashboard = () => {
             <Card.Body>
               <Card.Title>Your Stats</Card.Title>
               <p>Total Job Postings: {jobListings.length}</p>
-              <p>Total Workers Available: {availableWorkers.length}</p>
+              <p>Total available workers: {availableWorkers.length}</p>
               <Button variant="primary">Post a Job</Button>
             </Card.Body>
           </Card>
